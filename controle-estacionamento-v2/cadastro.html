@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estacionamento - Cadastro de Reserva</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Controle de Estacionamento</h1>
+        <nav>
+            <a href="index.html">Listagem de Vagas</a>
+            <a href="cadastro.html" class="active">Cadastrar Reserva</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Cadastro de Reserva de Vaga</h2>
+        <form id="form-cadastro">
+            <div class="input-group">
+                <label for="proprietario">Nome do Proprietário:</label>
+                <input type="text" id="proprietario" required maxlength="80" placeholder="Ex: João Silva">
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="bloco">Bloco do Apartamento:</label>
+                    <input type="text" id="bloco" required maxlength="20" placeholder="Ex: Bloco A">
+                </div>
+                <div class="input-group">
+                    <label for="apartamento">Número do Apartamento:</label>
+                    <input type="text" id="apartamento" required maxlength="10" placeholder="Ex: 102">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="veiculo">Modelo do Veículo:</label>
+                    <input type="text" id="veiculo" required maxlength="40" placeholder="Ex: Fiat Uno">
+                </div>
+                <div class="input-group">
+                    <label for="cor">Cor do Veículo:</label>
+                    <input type="text" id="cor" required maxlength="20" placeholder="Ex: Prata">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="placa">Placa do Veículo:</label>
+                    <input type="text" id="placa" required maxlength="8" autocomplete="off" placeholder="Ex: ABC-1234 ou ABC1D23">
+                </div>
+                <div class="input-group">
+                    <label for="vaga">Número da Vaga:</label>
+                    <input type="text" id="vaga" required maxlength="10" autocomplete="off" placeholder="Ex: 45">
+                </div>
+            </div>
+
+            <p id="mensagem-erro" class="mensagem-erro" role="alert" hidden></p>
+
+            <button type="submit" class="btn-salvar">Salvar Reserva</button>
+        </form>
+    </main>
+    <script src="js/dados.js"></script>
+    <script src="js/cadastro.js"></script>
+</body>
+</html>

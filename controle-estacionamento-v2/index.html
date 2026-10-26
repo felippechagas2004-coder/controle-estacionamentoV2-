@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estacionamento - Listagem de Vagas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Controle de Estacionamento</h1>
+        <nav>
+            <a href="index.html" class="active">Listagem de Vagas</a>
+            <a href="cadastro.html">Cadastrar Reserva</a>
+        </nav>
+    </header>
+    <main class="container-wide">
+        <h2>Vagas Reservadas</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vaga</th>
+                        <th>Proprietário</th>
+                        <th>Apto / Bloco</th>
+                        <th>Veículo / Cor</th>
+                        <th>Placa</th>
+                        <th>Entrada</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-veiculos">
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="js/dados.js"></script>
+    <script src="js/listagem.js"></script>
+</body>
+</html>
